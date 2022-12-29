@@ -49,10 +49,12 @@ function Edit({ contacts, selectedcontact, setcontacts, setIsEditing }) {
   };
 
   return (
-    <div className="small-container">
+    <div className="small-container mt-4">
       <form onSubmit={handleUpdate}>
         <h1>Edit contact</h1>
-        <label htmlFor="firstName">First Name</label>
+        <label htmlFor="firstName" className="mt-5">
+          First Name
+        </label>
         <input
           name="firstName"
           value={firstName}

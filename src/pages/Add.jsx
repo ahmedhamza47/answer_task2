@@ -46,10 +46,12 @@ function Add({ contacts, setcontacts, setIsAdding }) {
   };
 
   return (
-    <div className="small-container">
+    <div className="small-container mt-4">
       <form onSubmit={handleAdd}>
         <h1>Add Contact</h1>
-        <label htmlFor="firstName">First Name</label>
+        <label htmlFor="firstName" className="mt-5">
+          First Name
+        </label>
         <input
           name="firstName"
           value={firstName}
