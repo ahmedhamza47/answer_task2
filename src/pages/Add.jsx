@@ -96,14 +96,18 @@ function Add({ contacts, setcontacts, setIsAdding }) {
           onChange={(e) => setPhone(e.target.value)}
         />{" "}
         <div style={{ marginTop: "30px" }}>
-          <input type="submit" value="Add" className="btn btn-primary" />
-          <input
+          <button type="submit" value="Add" className="btn btn-primary">
+            Add{" "}
+          </button>
+          <button
             style={{ marginLeft: "12px" }}
             className="btn btn-danger"
             type="button"
             value="Cancel"
             onClick={() => setIsAdding(false)}
-          />
+          >
+            Cancel
+          </button>
         </div>
       </form>
     </div>
